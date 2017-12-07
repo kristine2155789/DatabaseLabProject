@@ -10,3 +10,15 @@ Kenan Cea
 Leo Dion
 John Rey Balinag
 Alec Idos
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TABLES TO BE USED:
+	MEMBER			EVENT			REWARD			STAFF
+	Columns			columns			columns			columns
+	Columns			columns			columns			columns	
+	Columns			columns			columns			columns
+	Columns			columns			columns			columns
+		
+	
+	
