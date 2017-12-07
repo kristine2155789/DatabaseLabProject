@@ -1,4 +1,4 @@
-1. PAYMENT (paymentid, amount, memberid, eventid, status)
+1. PAYMENT (paymentid, amount, memid, eventid, status)
 -Jones
 -Leo
 -Morillo
