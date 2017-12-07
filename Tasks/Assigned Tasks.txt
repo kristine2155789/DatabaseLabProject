@@ -3,7 +3,7 @@
 -Leo
 -Morillo
 
-2. MEMBER (memid, sfirstname, mmidname, mlastname, address, age, gender, level, points)
+2. MEMBER (memid, mfirstname, mmidname, mlastname, address, age, gender, level, points)
 -Natsu
 -Jorgia
 -Kenan
