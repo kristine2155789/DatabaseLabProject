@@ -1,19 +1,19 @@
-1. Create
+1. PAYMENT (paymentid, amount, memberid, eventid, status)
 -Jones
 -Leo
 -Morillo
 
-2. Retrieve
+2. MEMBER (memid, fname, midname, lastname, address, age, gender, level, points)
 -Natsu
 -Jorgia
 -Kenan
 
-3. Update
+3. EVENT (eventid, venue, date, time, eventname, amount, rewardid)
 -Duke
 -Yves
 -Alec
 
-4. Delete
+4. STAFF (staffid, firstname, lastname, memid)
 -Yvonne
 -Luke
 -John Rey
