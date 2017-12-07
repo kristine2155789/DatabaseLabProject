@@ -1,0 +1,46 @@
+CREATE SCHEMA `cosplay`;
+
+CREATE TABLE `cosplay`.`member` 
+CHANGE COLUMN `memid` `memid` INT(11) NOT NULL ,
+CHANGE COLUMN `mfirst_name` `mfirst_name` VARCHAR(45) NOT NULL ,
+CHANGE COLUMN `mmidname` `mmidname` VARCHAR(45) NOT NULL ,
+CHANGE COLUMN `mlastname` `mlastname` VARCHAR(45) NOT NULL ,
+CHANGE COLUMN `address` `address` VARCHAR(45) NOT NULL ,
+CHANGE COLUMN `age` `age` VARCHAR(45) NOT NULL ,
+CHANGE COLUMN `gender` `gender` VARCHAR(45) NOT NULL ,
+CHANGE COLUMN `level` `level` INT(11) NOT NULL ,
+CHANGE COLUMN `points` `points` INT(11) NOT NULL ,
+ADD COLUMN `membercol` VARCHAR(45) NOT NULL AFTER `points`,
+ADD PRIMARY KEY (`memid`);
+
+CREATE TABLE `cosplay`.`staff` (
+  `staffid` INT NOT NULL,
+  `sfirstname` VARCHAR(45) NOT NULL,
+  `slastname` VARCHAR(45) NOT NULL,
+  `memid` INT NOT NULL,
+  PRIMARY KEY (`staffid`),
+  INDEX `memid_idx` (`memid` ASC),
+  CONSTRAINT `memid`
+    FOREIGN KEY (`memid`)
+    REFERENCES `cosplay`.`member` (`memid`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION);
+	
+CREATE TABLE `cosplay`.`payment` (
+  `paymentid` INT NOT NULL,
+  `amount` INT NOT NULL,
+  `memid` VARCHAR(45) NOT NULL,
+  `eventid` VARCHAR(45) NOT NULL,
+  `status` VARCHAR(45) NOT NULL,
+  PRIMARY KEY (`paymentid`));
+
+CREATE TABLE `cosplay`.`event` (
+  `eventid` INT NOT NULL,
+  `venue` VARCHAR(45) NOT NULL,
+  `date` DATE NOT NULL,
+  `time` VARCHAR(45) NOT NULL,
+  `eventname` VARCHAR(45) NOT NULL,
+  `amount` VARCHAR(45) NOT NULL,
+  `rewardid` VARCHAR(45) NOT NULL,
+  PRIMARY KEY (`eventid`));
+
