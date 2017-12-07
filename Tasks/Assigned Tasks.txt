@@ -3,7 +3,7 @@
 -Leo
 -Morillo
 
-2. MEMBER (memid, fname, midname, lastname, address, age, gender, level, points)
+2. MEMBER (memid, sfirstname, mmidname, mlastname, address, age, gender, level, points)
 -Natsu
 -Jorgia
 -Kenan
@@ -13,7 +13,7 @@
 -Yves
 -Alec
 
-4. STAFF (staffid, firstname, lastname, memid)
+4. STAFF (staffid, sfirstname, slastname, memid)
 -Yvonne
 -Luke
 -John Rey
